@@ -119,10 +119,11 @@ class Kaggle:
         pass
 
     def model(self):
-        clf1 = LogisticRegression(random_state=1)
-        clf2 = RandomForestClassifier(n_estimators=50, random_state=1)
-        clf3 = GaussianNB()
+        # clf1 = LogisticRegression(random_state=1)
+        # clf2 = RandomForestClassifier(n_estimators=50, random_state=1)
+        # clf3 = GaussianNB()
 
+        # Just change the model here.
         model = MLPClassifier()
         model.fit(self.x_train, self.y_train)
         y_predict = model.predict(self.x_test)
